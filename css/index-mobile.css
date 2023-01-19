@@ -1,0 +1,812 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --neon-green: #39FF14;
+    --text-color: #f7f5f3;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+header {
+    width: 100%;
+    max-width: 1030px;
+    padding-top: 8%;
+    padding-bottom: 16%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    animation: animate 10s ease infinite;
+}
+
+@keyframes animate {
+    0% {
+        background-color: #252525;
+    }
+
+    30% {
+        background-color: #272727;
+    }
+
+    50% {
+        background-color: #141414;
+    }
+
+    70% {
+        background-color: #1b1b1b;
+    }
+
+    100% {
+        background-color: #1C1C1C;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(19, 19, 19);
+    color: white;
+    width: 100%;
+}
+
+.navbar #logo {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 2%;
+    margin-left: 6%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navbar #logo #dot {
+    color: var(--neon-green);
+}
+
+.navbar #logo sup {
+    font-size: 10px;
+}
+
+.navbar-links {
+    padding-right: 5%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 3%;
+    display: flex;
+    background-color: rgb(19, 19, 19);
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li a:hover {
+    color: var(--neon-green);
+}
+
+.navbar-links li:hover {
+    background-color: #555;
+}
+
+.toggle-menu-button {
+    position: absolute;
+    right: 6%;
+    margin-top: 3%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 28px;
+}
+
+.toggle-menu-button .bar {
+    height: 4px;
+    width: 90%;
+    background-color: white;
+    border-radius: 10px;
+    background-color: #39FF14;
+}
+
+#name-social-media {
+    width: 70%;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    min-width: 200px;
+    padding-left: 10%;
+}
+
+#name-social-media #my-name {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 100%;
+    margin-bottom: 8%;
+    color: var(--text-color);
+}
+
+#name-social-media #my-name #my-name-dot {
+    color: var(--neon-green);
+}
+
+#name-social-media #bottom-bar {
+    width: 20%;
+    height: 3px;
+    margin-bottom: 5%;
+    background-color: var(--neon-green);
+}
+
+#name-social-media #social-media {
+    width: 60%;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#name-social-media #social-media span {}
+
+#name-social-media #social-media span a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+#name-social-media #social-media span a:hover {
+    color: var(--neon-green);
+}
+
+#name-social-media button {
+    padding: 2.5%;
+    margin-top: 5%;
+    background-color: transparent;
+    border: 1px solid var(--neon-green);
+    width: 40%;
+    color: var(--neon-green);
+    cursor: pointer;
+}
+
+#name-social-media button:hover {
+    color: black;
+    background-color: var(--neon-green);
+    border: 1px solid var(--text-color);
+    font-weight: 500;
+}
+
+#introduction {
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 10%;
+}
+
+#introduction #intro-div-title {
+    color: var(--neon-green);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#introduction #intro-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    margin-bottom: 3%;
+}
+
+#introduction #intro-div-title:hover {
+    cursor: context-menu;
+    text-decoration: underline;
+}
+
+#introduction p {
+    font-size: 14px;
+    margin-bottom: 3%;
+    color: var(--text-color);
+}
+
+#introduction button {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    border: none;
+    color: var(--neon-green);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#introduction a button#saiba-mais:hover,
+#introduction a button#saiba-mais ion-icon[name="download-outline"]:hover,
+#introduction #btns-container a button:hover {
+    color: var(--text-color);
+}
+
+#introduction #btns-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+#introduction #btns-container a {
+    width: 38%;
+    text-decoration: none;
+}
+
+#introduction #btns-container a button {
+    width: 100%;
+}
+
+#introduction #btns-container #pdf-link {
+    width: 60%;
+}
+
+#introduction button#btn-pdf {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 14px;
+}
+
+#introduction button#btn-pdf ion-icon[name="download-outline"] {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.proj-imgs a {
+    text-decoration: none;
+}
+
+#introduction button ion-icon[name="arrow-down-outline"] {
+    color: var(--neon-green);
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+main {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1030px;
+}
+
+#about-me {
+    padding: 8% 10% 10% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#about-me h2 {
+    color: var(--neon-green);
+    padding-bottom: 4%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#about-me h3:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+
+#about-me article {
+    border-bottom: 1px solid #37ff143a;
+}
+
+#about-me article#professional-objective {
+    border-top: 1px solid var(--neon-green);
+}
+
+#about-me article h3 {
+    color: var(--neon-green);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#about-me article p {
+    color: var(--text-color);
+    margin-bottom: 6%;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#about-me article p#xpp1 {
+    margin-bottom: 0%;
+}
+
+#about-me aside {}
+
+#about-me aside h3 {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-weight: normal;
+    font-size: 18px;
+    color: var(--neon-green);
+}
+
+#about-me aside p {
+    color: var(--text-color);
+}
+
+#btn-back-top {
+    border: 1px solid var(--neon-green);
+    border-radius: 100%;
+    font-size: 26px;
+    position: fixed;
+    right: 6%;
+    bottom: 12px;
+    cursor: pointer;
+    padding: 2%;
+    background-color: #363636;
+    color: var(--neon-green);
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#btn-back-top:hover {
+    background-color: rgb(19, 19, 19);
+}
+
+#btn-back-top ion-icon {
+    color: var(--neon-green);
+}
+
+#skills {
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: var(--text-color);
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: auto;
+}
+
+#skills #skills-container {
+    width: 80%;
+}
+
+#skills #skills-title {
+    font-size: 20px;
+    color: var(--neon-green);
+    margin-bottom: 3%;
+    text-align: left;
+    width: 100%;
+}
+
+#skills #skills-title:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+
+#skills p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 8%;
+}
+
+#skills #skills-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+#skills #skills-cards div {
+    color: var(--text-color);
+    background-color: #363636;
+    padding: 5% 6%;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid var(--neon-green);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills #skills-cards div:hover {
+    background-color: rgb(19, 19, 19);
+}
+
+#skills #skills-cards div ion-icon {
+    font-size: 60px;
+    color: var(--neon-green);
+    margin-bottom: 4%;
+}
+
+#skills #skills-cards div i {
+    color: var(--neon-green);
+    margin-bottom: 4%;
+}
+
+#skills #skills-cards div i.fa-java {
+    font-size: 60px;
+}
+
+#skills #skills-cards div i.fa-database {
+    font-size: 60px;
+}
+
+#skills #skills-cards div p {
+    display: none;
+}
+
+#projects {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    width: 100%;
+    background-color: #2e2e2e;
+}
+
+#projects #projects-container {
+    width: 80%;
+    margin: auto;
+}
+
+#projects #proj-title {
+    margin-bottom: 2%;
+}
+
+#projects span:hover {
+    text-decoration: underline;
+    cursor: context-menu;
+}
+
+#projects span {
+    color: var(--neon-green);
+    font-size: 20px;
+}
+
+#projs-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.proj-imgs {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj-imgs a {
+    width: 90%;
+}
+
+.proj-imgs img {
+    width: 100%;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: 1px solid var(--neon-green);
+}
+
+.proj-image {
+    width: 100%;
+}
+
+.projs-caption span {
+    text-decoration: none;
+}
+
+[data-hab-btns] {
+    border: 1px solid var(--neon-green);
+    padding: 0.5rem;
+    color: var(--text-color);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+.active[data-hab-btns] {
+    background-color: var(--neon-green);
+    color: #363636;
+}
+
+[data-hab-contents] {
+    display: none;
+}
+
+.active[data-hab-contents] {
+    display: flex;
+}
+
+#active-top-btn.active-top-btn {
+    display: block;
+    pointer-events: auto;
+}
+
+#contact {
+    background-color: rgb(25, 25, 25);
+    padding-top: 8%;
+    padding-bottom: 18%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#contact #contact-container {
+    width: 80%;
+    padding-left: 10%;
+}
+
+#contact span {
+    text-align: center;
+    color: var(--neon-green);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#contact span:hover {
+    cursor: context-menu;
+    text-decoration: underline;
+}
+
+#contact #inputs-container label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#contact #inputs-container input {
+    border-radius: 5px;
+    color: var(--neon-green);
+    border-color: var(--neon-green);
+    background-color: #363636;
+    margin-bottom: 1.6%;
+    padding: 2% 0% 2% 0%;
+}
+
+#contact #inputs-container textarea {
+    border-radius: 5px;
+    color: var(--neon-green);
+    border-color: var(--neon-green);
+    background-color: #363636;
+    font-size: 18px;
+    padding-top: 1.4%;
+    max-width: 99%;
+    max-height: 100px;
+    min-width: 99%;
+    min-height: 100px;
+}
+
+#contact #inputs-container textarea::placeholder {
+    padding-left: 2%;
+    color: var(--neon-green);
+}
+
+#contact #inputs-container input::placeholder {
+    color: var(--neon-green);
+}
+
+#contact #inputs-container input[type="email"] {
+    height: 20px;
+    width: 99%;
+    border: 1px solid var(--neon-green);
+    font-size: 18px;
+}
+
+#contact #inputs-container input[type="email"]:focus {}
+
+#contact #inputs-container input[type="email"]::placeholder {}
+
+#contact #inputs-container input[id="email_name"] {
+    margin-top: 4%;
+}
+
+#contact #inputs-container input[type="text"] {
+    width: 99%;
+    border: 1px solid var(--neon-green);
+    font-size: 18px;
+}
+
+#contact #inputs-container input:focus,
+#contact #inputs-container input::placeholder {
+    padding-left: 2%;
+}
+
+#contact #btn-container {
+    background-color: rgb(25, 25, 25);
+}
+
+#contact #inputs-container button {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-top: 5%;
+    background-color: transparent;
+    border: 1px solid var(--neon-green);
+    color: var(--neon-green);
+    width: 30%;
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+#contact #inputs-container ion-icon {
+    margin-left: 8px;
+}
+
+#contact #inputs-container input#email_message {
+    padding-bottom: 40%;
+}
+
+#error-message {
+    margin-top: 1%;
+    font-size: 14px;
+    color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact #modal-container {
+    /* display: grid; */
+    display: none;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.747);
+    top: 0;
+    left: 0;
+    z-index: 99;
+    position: fixed;
+    overflow: auto;
+}
+
+#contact #modal-container.active {
+    display: grid;
+    /* display: none; */
+}
+
+#contact #modal {
+    border: 1px solid var(--neon-green);
+    width: 70%;
+    max-width: 450px;
+    /* max-height: 220px; */
+    border-radius: 5px;
+    padding-bottom: 3.5%;
+    background-color: black;
+    z-index: 999;
+    top: 50;
+    left: 10;
+    position: fixed;
+}
+
+#contact #modal header {
+    animation: none;
+    background-color: #191919;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#contact #modal header span {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 5.4%;
+}
+
+#contact #modal header button {
+    border: none;
+    padding-right: 5.4%;
+    display: grid;
+    place-items: center;
+    color: var(--neon-green);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ion-icon[name="close-circle-outline"] {
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+ion-icon[name="close-circle-outline"]:hover {
+    color: var(--neon-green);
+}
+
+#contact #modal header span:hover {
+    text-decoration: none;
+    cursor: text;
+}
+
+#contact #modal div {
+    padding: 5% 0% 3% 5.4%;
+}
+
+#contact #modal div span {
+    font-size: 17px;
+    text-decoration: none;
+    cursor: text;
+}
+
+#contact #modal div p {
+    margin-top: 2.6%;
+    background-color: #191919;
+    width: 85%;
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--text-color);
+    padding: 2% 4%;
+}
+
+#contact #modal button#fechar {
+    font-weight: 500;
+    display: grid;
+    place-items: center;
+    color: var(--neon-green);
+    border: 1px solid var(--neon-green);
+    background-color: transparent;
+    padding: 2.6%;
+    cursor: pointer;
+    float: right;
+    margin-right: 7%;
+}
+
+#contact #modal button#fechar:hover {
+    color: black;
+    background-color: var(--neon-green);
+    border: 1px solid var(--text-color);
+}
+
+footer {
+    background-color: rgb(25, 25, 25);
+    border-top: 1px solid var(--neon-green);
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    font-size: 13px;
+}
+
+footer #footer-container span {
+    color: var(--neon-green);
+}
+
+#btn-pdf {
+    padding: 2.5%;
+    margin-top: 5%;
+    background-color: transparent;
+    border: 1px solid var(--neon-green);
+    width: 40%;
+    color: var(--neon-green);
+    cursor: pointer;
+}

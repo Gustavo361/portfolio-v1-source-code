@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index-tablet.css">
+    <script async src="js/index.js"></script>
+    <title>Github User Search App</title>
+</head>
+
+<body id="body">
+    <section id="section">
+        <div id="search-app-title">
+            <span id="main-title">devfinder</span>
+            <button id="dark-clear-mode">
+                LIGHT
+                <ion-icon name="sunny" id="sunny"></ion-icon>
+                <ion-icon name="moon" id="moon"></ion-icon>
+            </button>
+        </div>
+
+        <div id="search-app-area">
+            <ion-icon name="search-outline"></ion-icon>
+            <input type="search" name="search-input" id="search-input" placeholder="Search GitHub username...">
+            <button type="submit" id="search-btn">Search</button>
+        </div>
+
+        <div id="search-app-info">
+            <div id="user-info">
+                <div id="img-container">
+                    <img src="img/perfil-1.jpg" alt="" id="image">
+                </div>
+                <div id="user-info-basic">
+                    <span id="user-name">User Name</span>
+                    <a id="user-a" href="" target="_blank">@user</a>
+                    <span id="joined-date">Joined Date</span>
+                </div>
+            </div>
+
+            <p id="user-info-summary">
+                The profile has no bio.
+            </p>
+
+            <div id="user-rff">
+                <div class="rff-box">
+                    <span id="repositories-title" class="user-rff-title">Repos</span>
+                    <span id="repositories-num" class="user-rff-numbers">0</span>
+                </div>
+
+                <div class="rff-box">
+                    <span id="followers-title" class="user-rff-title">Followers</span>
+                    <span id="followers-num" class="user-rff-numbers">0</span>
+                </div>
+
+                <div class="rff-box">
+                    <span id="following-title" class="user-rff-title">Following</span>
+                    <span id="following-num" class="user-rff-numbers">0</span>
+                </div>
+            </div>
+
+            <div id="user-contact">
+                <div class="contacts c1">
+                    <div href="|" id="user-city" class="user-contact-content" target="_blank">
+                        <ion-icon name="pin-outline" id="pin-outline" class="contacts-icons"></ion-icon>
+                        <span id="user-city-content" class="contact-span">Not Available</span>
+                    </div>
+                    <a id="user-github" class="user-contact-content">
+                        <ion-icon name="link-outline" id="link-outline" class="contacts-icons"></ion-icon>
+                        <span id="user-github-content" class="contact-span">Not Available</span>
+                    </a>
+                </div>
+
+                <div class="contacts c2">
+                    <a id="user-twitter" class="user-contact-content">
+                        <ion-icon name="logo-twitter" id="logo-twitter" class="contacts-icons"></ion-icon>
+                        <span id="logo-twitter-content" class="contact-span">Not Available</span>
+                    </a>
+                    <div id="user-business" class="user-contact-content">
+                        <ion-icon name="business-outline" id="business-outline" class="contacts-icons"></ion-icon>
+                        <span id="business-outline-content" class="contact-span">Not Available</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

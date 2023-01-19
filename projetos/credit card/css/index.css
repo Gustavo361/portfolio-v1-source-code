@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 500;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  background-color: white;
+}
+
+header {
+  width: 100%;
+  padding-top: 9%;
+  padding-bottom: 40%;
+  overflow: visible;
+  background-image: url(../images/mobile/bg-main-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+header #front-card {
+  height: 80%;
+  max-width: 330px;
+  max-height: 200px;
+  color: rgb(228, 228, 228);
+  border-radius: 8px;
+  background-image: url(../images/bg-card-front.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 23%;
+  left: 5%;
+  z-index: 1;
+  padding-top: 4.6%;
+  padding-left: 6%;
+  padding-right: 6%;
+}
+
+header #front-card #card-logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 14%;
+}
+
+header #front-card #card-logo .circle {
+  border-radius: 50%;
+}
+
+header #front-card #card-logo .circle.c1 {
+  height: 34px;
+  width: 34px;
+  background-color: white;
+}
+
+header #front-card #card-logo .circle.c2 {
+  background-color: transparent;
+  border: 1px solid white;
+  height: 11px;
+  width: 11px;
+  margin-left: 3%;
+}
+
+header #front-card #client-number {
+  width: 100%;
+  font-size: 17px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2.6%;
+  font-weight: 400;
+}
+
+header #front-card #date-client {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 300;
+}
+
+header #back-card {
+  width: 76%;
+  height: 80%;
+  max-width: 400px;
+  max-height: 210px;
+  border-radius: 8px;
+  color: rgb(228, 228, 228);
+  background-image: url(../images/bg-card-back.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 0;
+  left: 20%;
+  margin-bottom: 10%;
+}
+
+header #back-card #client-cvc {
+  padding-top: 20.4%;
+  float: right;
+  margin-right: 13%;
+}
+
+main {
+  background-color: white;
+  width: 100%;
+}
+
+section {
+  margin: 40% auto;
+  width: 98%;
+  letter-spacing: 1.6px;
+}
+
+section form {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+section form label {
+  padding-bottom: 2.2%;
+  font-size: 12px;
+  width: 100%;
+  font-weight: 600;
+  color: hsl(278, 68%, 11%);
+}
+
+input {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 0.5%;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid;
+  border-color: hsl(270, 3%, 87%);
+}
+
+input::placeholder {
+  padding-left: 3.4%;
+  font-weight: 600;
+  font-size: 17px;
+  color: hsl(270, 3%, 87%);
+}
+
+input:focus {
+
+  outline: none;
+}
+
+input:focus.error {
+  border-color: hsl(0, 100%, 66%);
+}
+
+.error {
+  padding-top: 0.5%;
+  padding-bottom: 2%;
+  float: left;
+  width: 100%;
+  font-size: 10.6px;
+  display: none;
+}
+
+.error.active {
+  display: block;
+  color: hsl(0, 100%, 66%);
+}
+
+.error-border {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+
+section form #date-cvc {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+#section form #date-cvc #date {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#section form #date-cvc #cvc-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 49.5%;
+}
+
+#mm,
+#yy {
+  width: 38.6%;
+  padding-left: 5%;
+}
+
+#section form #date-cvc #cvc-container #cvc {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+form button {
+  border-radius: 8px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+  border: none;
+  background-color: hsl(278deg, 68%, 11%);
+}
+
+form button:hover {
+  background-color: hsl(278, 94%, 30%);
+}
+
+section section#complete-section {
+  display: none;
+
+}
+
+section section#complete-section.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+}
+
+section section#complete-section svg {
+  margin-bottom: 8%;
+}
+
+section section#complete-section h1 {
+  color: hsl(278deg, 68%, 11%);
+  margin-bottom: 2%;
+}
+
+section section#complete-section div {
+  color: grey;
+  margin-bottom: 8%;
+}
+
+section section#complete-section button {
+  border-radius: 8px;
+  border: none;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  font-size: 16px;
+  width: 100%;
+  color: white;
+  background-color: hsl(278deg, 68%, 11%);
+}
+
+section section#complete-section button:hover {
+  background-color: hsl(278, 94%, 30%);
+}
+
+section section#complete-section button a {
+  text-decoration: none;
+  color: white;
+}

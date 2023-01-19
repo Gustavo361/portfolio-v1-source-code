@@ -1,0 +1,30 @@
+@media (min-width: 750px) {
+    #about-me {
+        width: 56%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    #about-me h2 {
+        padding-bottom: 2.4%;
+    }
+
+    #about-me p {
+        padding-right: 20%;
+    }
+
+    #about-me article h3 {
+        margin-top: 4%;
+    }
+
+    #about-me article p {
+        margin-bottom: 4%;
+    }
+
+    #about-me aside h3 {
+        margin-top: 4%;
+        margin-bottom: 2%;
+    }
+
+    #contact #modal-container {}
+}

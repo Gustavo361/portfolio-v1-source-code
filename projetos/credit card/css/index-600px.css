@@ -1,0 +1,113 @@
+@media (min-width: 600px) {
+    header {
+        padding-top: 9%;
+        padding-bottom: 30%;
+    }
+
+    header #front-card {
+        margin-top: 20%;
+    }
+
+    header #back-card #client-cvc {
+        padding-top: 20%;
+    }
+
+    header #front-card #card-logo {
+        margin-bottom: 16%;
+    }
+
+    header #front-card #client-number {
+        font-size: 22px;
+        font-weight: 500;
+        word-spacing: 12px;
+        margin-bottom: 7%;
+    }
+
+    section form {
+        max-width: 480px;
+    }
+
+    #date {
+        width: 40%;
+    }
+
+    #mm,
+    #yy {
+        width: 34%;
+        margin-top: 1%;
+    }
+
+    #cvc-container {
+        width: 50%;
+    }
+
+}
+
+@media (min-width:625px) {
+    header #back-card #client-cvc {
+        padding-top: 21%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 50px;
+        height: 50px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media (min-width: 650px) {
+    header #front-card {
+        margin-top: 18%;
+        margin-left: 8%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 50.6px;
+        height: 50.6px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 17.6px;
+        height: 17.6px;
+    }
+
+    header #back-card {
+        margin-left: 10%;
+    }
+
+    @media (min-width:650px) {
+        header #back-card #client-cvc {
+            padding-top: 21.6%;
+        }
+    }
+
+    @media (min-width:665px) {
+        header #back-card #client-cvc {
+            padding-top: 22%;
+        }
+    }
+
+    section {
+        margin: 32% auto;
+    }
+}
+
+@media (min-width: 670px) {
+    header #front-card {
+        margin-top: 18%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 52px;
+        height: 52px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 19px;
+        height: 19px;
+    }
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="css/index-mobile.css">
+    <link rel="stylesheet" href="css/index-tablet.css">
+    <link rel="stylesheet" href="css/index-tablet-2.css">
+    <link rel="stylesheet" href="css/index-desktop.css">
+    <script defer src="js/index.js"></script>
+    <script defer src="js/form-validation.js"></script>
+    <title>Portfolio Prototype v1.0</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html" id="logo"><span>GF</span><span id="dot">.</span><sup>v1</sup></a>
+        <a href="#" class="toggle-menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+                <li><a href="#about-me">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div id="name-social-media">
+            <span id="my-name">Gustavo Faustino<span id="my-name-dot">.</span></span>
+            <span id="bottom-bar"></span>
+            <div id="social-media">
+                <span>
+                    <a target="_blank" href="https://www.linkedin.com/in/gustavo-faustino-2659331ba/">linkedin |</a>
+                </span>
+                <span>
+                    <a target="_blank" href="https://www.instagram.com/gustavoff_19/"> instagram</a>
+                </span>
+                <span>
+                    <a target="_blank" href="https://wa.me/555191083102
+                    ">whatsapp |</a>
+                </span>
+                <span>
+                    <a target="_blank" href="https://twitter.com/Gusttavo361">twitter</a>
+                </span>
+            </div>
+            <a href="#contact"><button id="btn-contact">CONTATO</button></a>
+        </div>
+        <div id="introduction">
+            <span id="intro-div-title">INTRODUÇÃO</span>
+            <span id="intro-title">Desenvolvedor Web Front-end</span>
+            <p>Sou o Gustavo, faço sites por diversão e busco uma oportunidade como dev no mundo real.
+            </p>
+            <div id="btns-container">
+                <a href="#projects">
+                    <button id="saiba-mais">
+                        Saiba mais
+                        <ion-icon name="arrow-down-outline"></ion-icon>
+                    </button>
+                </a>
+                <a id="pdf-link" target="_blank" href="PDFs/Currículo - Gustavo Faustino.pdf">
+                    <button id="btn-pdf">
+                        Currículo em PDF
+                        <ion-icon name="download-outline"></ion-icon>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <button id="btn-back-top">
+            <ion-icon name="caret-up-outline"></ion-icon>
+        </button>
+
+        <section id="about-me">
+            <h2>Sobre mim</h2>
+            <article id="professional-objective">
+                <h3>Objetivo profissional</h3>
+                <p>- Busco estágio ou efetivação na área de desenvolvimento web Front-end</p>
+            </article>
+
+            <article>
+                <h3>Experiência</h3>
+                <p id="xpp1">
+                    - Concluo projetos para praticar e aumentar minhas
+                    habilidades de desenvolvimento.
+                </p>
+                <p>- No lado back-end desenvolvi um CRUD usando JDBC e SQL na IDE
+                    NetBeans. Também tenho alguns projetos intermediários Java POO.
+                </p>
+            </article>
+
+            <article>
+                <h3>Formação</h3>
+                <p>- Completei o curso em Tecnologia da Informação e estou graduando no curso de Análise e
+                    Desenvolvimento
+                    de Sistemas.</p>
+            </article>
+
+            <aside>
+                <h3>Idioma</h3>
+                <p>- Inglês avançado</p>
+            </aside>
+        </section>
+
+        <section id="skills">
+            <div id="skills-container">
+                <span id="skills-title">Habilidades</span>
+                <p>Alguns conhecimentos adquiridos pelos cursos e estudos individuais</p>
+                <div id="skills-cards">
+                    <div>
+                        <ion-icon name="logo-html5"></ion-icon>
+                        <span class="card-title">HTML</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-css3"></ion-icon>
+                        <span class="card-title">CSS</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-javascript"></ion-icon>
+                        <span class="card-title">Javascript</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div>
+                        <i class="fa-sharp fa-solid fa-database"></i>
+                        <span class="card-title">Banco de dados</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <span class="card-title">Java</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div>
+                        <ion-icon name="code-working"></ion-icon>
+                        <span class="card-title">POO</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div>
+                        <ion-icon name="logo-github"></ion-icon>
+                        <span class="card-title">Git/Github</span>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div id="projects-container">
+                <div id="proj-title">
+                    <span>Projetos</span>
+                </div>
+                <div id="prj-btns">
+                    <button class="active" id="btn1" data-hab-btns="#proj-front">Front-end</button>
+                    <button data-hab-btns="#proj-back">Back-end</button>
+                    <button data-hab-btns="#proj-full">Full-stack</button>
+                </div>
+                <div id="projs-container">
+                    <div id="proj-front" class="proj-imgs active" data-hab-contents>
+                        <a href="projetos/FAQ-card/index.html" target="_blank">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/FAQ.jpg" alt="projeto-front 2">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>FAQ com JS</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a target="_blank" href="projetos/sunnyside-agency/index.html">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/sunny-side-agency.jpg" alt="projeto-front 3">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Sunnyside Agency</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="projetos/credit card/index.html" target="_blank">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/interactive-credit-card.jpg" alt="projeto-front 1">
+                                </div>
+
+                                <div class="proj-caption">
+                                    <span>Projeto Front a Caminho</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="proj-back" class="proj-imgs" data-hab-contents>
+                        <a target="_blank" href="projetos/github-user-search-app/index.html">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/git-hub-search.jpg" alt="projeto-back 1">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Busca de Usuários via API GitHub</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/empty.jpg" alt="projeto-back 2">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Projeto Back a Caminho</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/empty.jpg" alt="projeto-back 3">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Projeto Back a Caminho</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div id="proj-full" class="proj-imgs" data-hab-contents>
+                        <a href="">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/empty.jpg" alt="projeto-full 1">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Projeto Full a Caminho</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/empty.jpg" alt="projeto-full 2">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Projeto Full a Caminho</span>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="proj-image">
+                                <div class="image-container">
+                                    <img src="images/empty.jpg" alt="projeto-full 3">
+                                </div>
+                                <div class="proj-caption">
+                                    <span>Projeto Full a Caminho</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="contact-container">
+                <span>Entre em contato, se quiser</span>
+                <div id="inputs-container">
+                    <div id="error-message"></div>
+                    <form action="https://formsubmit.co/9c1efae39279816d922c680085784501" method="POST" class="form">
+                        <iinput type="hidden" name="_next" value="true">
+                            <input type="text" name="name" id="email_name" placeholder="Seu nome" required />
+                            <input type="email" name="email" id="email_id" placeholder="Seu e-mail" required />
+                            <textarea name="message" id="email_message" placeholder="Sua mensagem" required></textarea>
+                            <input type="hidden" name="_captcha" value="true" />
+                            <div id="btn-container">
+                                <button type="submit" id="submit" submitForm()>
+                                    Enviar
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer-container">
+            &#169; Copyright - Gustavo Faustino <span>|</span> Todos os Direitos Reservados
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

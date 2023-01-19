@@ -1,0 +1,131 @@
+@media (min-width:600px) {
+    section {
+        width: 80%;
+    }
+
+    #search-app-area {
+        margin-bottom: 1%;
+    }
+
+    #search-app-title {
+        padding-bottom: 1%;
+    }
+
+    #search-app-info {
+        padding-top: 0%;
+    }
+
+    #search-app-title span {
+        font-size: larger;
+        font-weight: 500;
+    }
+
+    #search-app-title button {
+        width: 96px;
+        font-size: 10px;
+        font-weight: 100;
+    }
+
+    #search-app-area {
+        margin-bottom: 4%;
+        padding: 1% 1% 1% 1%;
+    }
+
+    button[type="submit"] {
+        /* width: 12%; */
+        padding: 3%;
+    }
+
+    #user-info {
+        padding-bottom: 4%;
+    }
+
+    #user-info-summary {
+        padding-bottom: 3%;
+    }
+
+    #user-rff {
+        margin-bottom: 1%;
+    }
+
+    #user-rff {
+        padding-top: 1%;
+        padding-bottom: 1%;
+        text-align: left;
+    }
+
+    .user-rff-title {}
+
+    #user-contact {
+        padding-top: 3%;
+        flex-direction: row;
+    }
+
+    .contacts.c1 {}
+
+    .contacts.c2 {
+        text-align: center;
+        width: 70%;
+    }
+}
+
+@media (min-width:1200px) {
+    #search-app-title span {
+        font-size: x-large;
+    }
+
+    #search-app-title button {
+        font-size: xx-small;
+        font-weight: 800;
+    }
+
+    #search-app-title button ion-icon {
+        /* font-size: 150px; */
+    }
+
+    ion-icon[name="sunny"] {
+        display: block;
+    }
+
+    button[type="submit"] {
+        padding: 2.5%;
+        width: 15%;
+    }
+
+    #search-app-area {
+        margin-bottom: 3%;
+    }
+
+    input[type="search"] {
+        margin-left: -10%;
+    }
+
+    #user-info {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #user-info #img-container {
+        height: 86px;
+        width: 86px;
+    }
+
+    #user-info-summary {
+        /* background-color: orange; */
+        width: 70%;
+        margin-right: 10%;
+        padding-bottom: 3%;
+    }
+
+    #user-rff {
+        margin-right: 10%;
+        width: 70%;
+    }
+
+    #user-contact {
+        padding-top: 4%;
+        padding-bottom: 1%;
+        width: 70%;
+        margin-right: 10%;
+    }
+}

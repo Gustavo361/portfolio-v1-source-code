@@ -1,0 +1,239 @@
+@media (min-width:600px) {
+    .navbar #logo {
+        margin-top: 1.4%;
+    }
+
+    .navbar-links ul {
+        padding-bottom: 0%;
+    }
+
+    #btn-back-top {
+        padding: 1.4%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+
+    #name-social-media {
+        margin-bottom: 0%;
+        padding-left: 0%;
+        width: 45%;
+    }
+
+    #name-social-media #my-name {
+        font-size: 60px;
+        font-weight: 700;
+        margin-bottom: 8%;
+    }
+
+    #name-social-media #social-media {
+        width: 60%;
+        margin-bottom: 3%;
+    }
+
+    #name-social-media a {
+        width: 40%;
+    }
+
+    #name-social-media a button {
+        width: 100%;
+    }
+
+    #name-social-media #bottom-bar {
+        width: 30%;
+        margin-bottom: 8%;
+    }
+
+    #name-social-media #social-media {
+        font-size: 16px;
+    }
+
+    #name-social-media button {
+        padding: 5.4%;
+        width: 44%;
+        font-weight: 500;
+    }
+
+    #image1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #introduction {
+        padding-left: 0;
+        margin-bottom: 0%;
+        width: 45%;
+    }
+
+    #introduction #intro-div-title {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    #introduction #intro-title {
+        font-size: 29px;
+        font-weight: 800;
+    }
+
+    #introduction p {
+        font-size: 15px;
+    }
+
+    #introduction button {
+        width: 55%;
+        font-size: 15px;
+    }
+
+    #introduction #btns-container #pdf-link {
+        width: 50%;
+    }
+
+    #introduction button#btn-pdf {
+        width: 56%;
+    }
+
+    #about-me {
+        width: 56%;
+    }
+
+    #skills p {
+        margin-bottom: 4%;
+    }
+
+    #skills #skills-title {
+        margin-bottom: 1.5%;
+    }
+
+    #skills #skills-cards {
+        gap: 14px;
+    }
+
+    #skills #skills-cards div {
+        padding: 4% 5%;
+        width: 30%;
+    }
+
+    #skills #skills-cards div ion-icon {
+        font-size: 64px;
+    }
+
+    #projects {
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+
+    #projects span {
+        color: var(--neon-green);
+        font-size: 16px;
+    }
+
+    #projects #proj-title span {
+        font-size: 20px;
+    }
+
+    #projs-container {}
+
+    .proj-imgs {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .proj-imgs a {
+        width: 50%;
+    }
+
+    .proj-image {
+        margin-top: 4%;
+        width: 90%;
+    }
+
+    #contact {
+        padding-top: 4%;
+        padding-bottom: 12%;
+        padding-left: 0%;
+    }
+
+    #contact #modal-container {}
+
+    #contact #modal {
+        padding-bottom: 2.4%;
+    }
+
+    #contact #modal header {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    #contact #modal div {
+        padding: 3% 0% 3% 4%;
+        /* background-color: crimson; */
+    }
+
+    #contact #modal button#fechar {
+        padding: 1.6%;
+    }
+
+    ion-icon[name="close-circle-outline"] {
+        font-size: 28px;
+    }
+
+    #contact #modal button#fechar {
+        font-size: 14px;
+    }
+
+
+    #contact #contact-container {
+        width: 70%;
+    }
+
+    footer {
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+}
+
+@media (max-width:600px) {
+    .toggle-menu-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+        padding-right: 0%;
+        position: absolute;
+        margin-top: 10%;
+        background-color: #333;
+    }
+}

@@ -1,0 +1,84 @@
+@media (min-width: 400px) {
+
+    header #front-card #card-logo {
+        margin-bottom: 15%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 40px;
+        height: 40px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 14px;
+        height: 14px;
+    }
+
+    header #front-card #client-number {
+        font-size: 20px;
+        font-weight: 500;
+        word-spacing: 10px;
+        margin-bottom: 5%;
+    }
+
+    section form label {
+        margin-top: 1%;
+        margin-bottom: initial;
+    }
+
+    .error {
+        padding-top: 0.5%;
+        padding-bottom: 2%;
+        float: left;
+        width: 100%;
+        font-size: 11px;
+    }
+}
+
+@media (min-width: 450px) {
+    #front-card {
+        margin-left: 2%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 41px;
+        height: 41px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 14.6px;
+        height: 14.6px;
+    }
+
+    header #front-card #client-number {
+        font-size: 20px;
+        font-weight: 500;
+        word-spacing: 10px;
+    }
+
+    header #front-card #date-client {
+        font-size: 14px;
+    }
+
+    #back-card {
+        margin-left: -2%;
+    }
+
+    header #back-card #client-cvc {
+        padding-top: 21.6%;
+    }
+}
+
+@media (min-width: 480px) {
+    header #front-card #client-number {
+        margin-bottom: 11.6%;
+    }
+
+    .error {
+        padding-top: 0.5%;
+        padding-bottom: 2%;
+        float: left;
+        width: 100%;
+        font-size: 11.4px;
+    }
+}

@@ -1,0 +1,24 @@
+@media (min-width: 820px) {
+    header #front-card {
+        margin-top: 15%;
+        margin-left: 15%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 57px;
+        height: 57px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 25px;
+        height: 25px;
+    }
+
+    header #back-card {
+        margin-left: 15%;
+    }
+
+    main section {
+        margin-top: 20%;
+    }
+}

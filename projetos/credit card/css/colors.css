@@ -1,0 +1,9 @@
+tag {
+    color: hsl(0, 0%, 100%); /*card number*/
+    color: hsl(270, 3%, 87%); 
+    color: hsl(279, 6%, 55%); /*placeholder*/
+    color: hsl(278, 68%, 11%); /*button letters*/
+    color: hsl(0, 100%, 66%); /*error bar phrase*/
+    color: hsl(249, 99%, 64%); /*hover button?*/
+    color: hsl(278, 94%, 30%); /*focus bar*/
+}

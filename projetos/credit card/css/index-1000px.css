@@ -1,0 +1,38 @@
+@media (min-width: 1024px) {
+    header #front-card {
+        width: 96%;
+        height: 24%;
+        margin-top: 20%;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 58px;
+        height: 58px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 24px;
+        height: 24px;
+    }
+
+    header #back-card {
+        width: 110%;
+        height: 220%;
+        margin-left: 32%;
+        margin-top: 100%;
+    }
+
+    section form #date label {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    header #front-card {
+        margin-top: 16%;
+    }
+
+    header #back-card {
+        margin-top: 82%;
+    }
+}

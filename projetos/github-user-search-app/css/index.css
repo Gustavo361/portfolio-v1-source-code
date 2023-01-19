@@ -1,0 +1,347 @@
+:root {
+    --bg-primary-color: #141C30;
+    --bg-secondary-color: #1E2B47;
+    --button-color: #007AFD
+}
+
+body {
+    background-color: var(--bg-primary-color);
+    color: white;
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#search-input.bright {
+    background-color: #F5F8FF;
+}
+
+body.bright {
+    background-color: #F5F8FF;
+}
+
+section.bright {
+    background-color: #F5F8FF;
+}
+
+#search-app-area.bright {
+    -webkit-box-shadow: 22px 34px 43px -25px rgba(158, 149, 158, 1);
+    -moz-box-shadow: 22px 34px 43px -25px rgba(158, 149, 158, 1);
+    box-shadow: 22px 34px 43px -25px rgba(158, 149, 158, 1);
+    background-color: #F5F8FF;
+}
+
+#dark-clear-mode.bright {
+    background-color: #F5F8FF;
+}
+
+ion-icon[name="sunny"].bright {
+    display: none;
+}
+
+ion-icon[name="moon"].bright {
+    display: block;
+}
+
+#search-app-title.bright {
+    background-color: #F5F8FF;
+}
+
+#search-app-title span.bright {
+    color: #281E25;
+}
+
+#search-app-title button.bright {
+    color: #697A8A;
+}
+
+#search-app-title button ion-icon.bright {
+    color: #697A8A;
+}
+
+input[type="search"]::placeholder.bright {
+    color: #697A8A;
+}
+
+input[type="search"].bright {
+    background-color: #F5F8FF;
+}
+
+#user-info-basic #user-name.bright {
+    color: #323234;
+}
+
+#user-info-basic #user-a.bright {
+    color: #323234;
+}
+
+#search-app-info.bright {
+    -webkit-box-shadow: 22px 34px 43px -25px rgba(158, 149, 158, 1);
+    -moz-box-shadow: 22px 34px 43px -25px rgba(158, 149, 158, 1);
+    box-shadow: 22px 34px 43px -25px rgba(158, 149, 158, 1);
+    background-color: #F6F7FC;
+}
+
+#user-rff.bright {
+    background-color: #d7d8dd;
+}
+
+.user-rff-numbers.bright {
+    color: #281E25;
+}
+
+ion-icon.bright {
+    color: #697A8A;
+}
+
+.contacts-icons.bright {
+    color: #506A9C;
+}
+
+#user-info-basic #joined-date.bright {
+    color: #281E25;
+    font-weight: 500;
+}
+
+input[type="search"].bright {
+    color: #281E25;
+}
+#user-rff .rff-box .user-rff-title.bright {
+    color: #49545f;
+}
+
+section {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+}
+
+#search-app-title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7%;
+}
+
+#search-app-title span {
+    font-size: xx-large;
+    font-weight: 600;
+    color: #F9F8FB;
+}
+
+#search-app-title button {
+    background-color: var(--bg-primary-color);
+    border: none;
+    padding: 2%;
+    width: 110px;
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    letter-spacing: 4px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#search-app-title button ion-icon {
+    margin-left: 10%;
+    font-size: xx-large;
+}
+
+ion-icon[name="sunny"] {
+    display: block;
+}
+
+ion-icon[name="moon"] {
+    display: none;
+}
+
+#search-app-area {
+    width: 98%;
+    background-color: var(--bg-secondary-color);
+    padding: 2% 2% 2% 2%;
+    margin-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+}
+
+ion-icon[name="search-outline"] {
+    padding-left: 2%;
+    color: #0F74E5;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+input[type="search"] {
+    width: 70%;
+    border: none;
+    background-color: var(--bg-secondary-color);
+    font-size: medium;
+    padding-left: 0%;
+    color: white;
+}
+
+input[type="search"]::placeholder {
+    color: #cacdcf;
+    font-size: x-medium;
+    font-weight: 500;
+}
+
+button[type="submit"] {
+    background-color: #0279F9;
+    cursor: pointer;
+    width: 24%;
+    border-radius: 12px;
+    color: #d6e5f7;
+    padding: 4%;
+    text-align: center;
+    border: none;
+    font-size: medium;
+    font-weight: 600;
+}
+
+#search-app-info {
+    width: 100%;
+    background-color: var(--bg-secondary-color);
+    border-radius: 12px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#user-info {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 7%;
+    padding-top: 4%;
+}
+
+#user-info #img-container {
+    height: 90px;
+    width: 90px;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+#img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#user-info-basic {
+    display: flex;
+    margin-left: 6%;
+    flex-direction: column;
+}
+
+#user-info-basic a {
+    padding-bottom: 8%;
+    text-decoration: none;
+}
+
+#user-info-basic span {
+    padding-bottom: 8%;
+}
+
+#user-info-basic #user-name {
+    font-size: large;
+}
+
+#user-info-basic #user-a {
+    color: #0279F9;
+    font-size: medium;
+}
+
+#user-info-basic #joined-date {
+    font-weight: 200;
+}
+
+#user-info-summary {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 6%;
+    font-weight: 500;
+    font-size: medium;
+    color: #8D93A6;
+    line-height: 200%;
+}
+
+#user-rff {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: #141C30;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#user-rff .rff-box {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#user-rff .rff-box .user-rff-title {
+    padding-bottom: 12%;
+    font-size: small;
+    font-weight: 700;
+    color: #8D93A6;
+    text-align: center;
+}
+
+.user-rff-numbers {
+    text-align: center;
+}
+
+#user-contact {
+    padding-top: 7%;
+    padding-bottom: 3%;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content: flex-start;
+    color: #8F95A5;
+    font-size: medium;
+    font-weight: 400;
+}
+
+#user-contact a {
+    color: #8F95A5;
+    text-decoration: none;
+}
+
+ion-icon {
+    padding-right: 7%;
+    font-size: 20px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: left;
+}
+
+.user-contact-content {
+    padding-bottom: 5%;
+}
+
+.contacts.c1 {}
+
+.contacts.c2 {}

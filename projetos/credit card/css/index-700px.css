@@ -1,0 +1,27 @@
+@media (min-width:700px) {
+    header #back-card #client-cvc {
+        padding-top: 22.4%;
+    }
+
+    header #front-card #client-number {
+        font-size: 24px;
+        font-weight: 500;
+        word-spacing: 12px;
+    }
+
+    header #front-card #card-logo .circle.c1 {
+        width: 54px;
+        height: 54px;
+    }
+
+    header #front-card #card-logo .circle.c2 {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+@media (min-width:720px) {
+    section {
+        margin: 27% auto;
+    }
+}
