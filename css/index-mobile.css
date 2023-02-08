@@ -249,19 +249,21 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0;
+    width: 130%;
 }
 
 #introduction #btns-container a {
-    width: 38%;
-    text-decoration: none;
+    width: 50%;
+    text-decoration: none; 
 }
 
 #introduction #btns-container a button {
     width: 100%;
 }
 
+
 #introduction #btns-container #pdf-link {
-    width: 60%;
+    width: 80%;
 }
 
 #introduction button#btn-pdf {
